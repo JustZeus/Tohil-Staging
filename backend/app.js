@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const { startAlertGenerationJob } = require('./src/v1/jobs/alertGenerator');
 
 
 require('dotenv').config();
@@ -84,6 +85,9 @@ app.use((error, req, res, next) => {
         },
     });
 });
+
+// Cron Job every ten minutes to grab new alert data
+startAlertGenerationJob();
 
 const server = app.listen(port, () => {
     console.log('Server started on port ' + port);

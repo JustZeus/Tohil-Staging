@@ -5,17 +5,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev start": "nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "Nancy Vazquez - Ricardo Zamudio",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@turf/helpers": "^7.2.0",
+    "axios": "^1.10.0",
     "body-parser": "^2.2.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "mongoose": "^8.15.2"
+    "mongoose": "^8.15.2",
+    "node-cron": "^4.1.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

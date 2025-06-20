@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const alertSchema = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
 
-  alertId: { type: String, unique: true, required: true },
+  alertId: { type: String, required: true },
   title: { type: String, required: true },
   severity: { type: Number, required: true, min: 1, max: 4 },
 
