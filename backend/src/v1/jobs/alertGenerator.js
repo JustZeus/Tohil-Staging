@@ -96,7 +96,6 @@ async function generateOnceNow() {
         updatedAt: new Date().toISOString()
       };
 
-      alertData['_id'] = new mongoose.Types.ObjectId();
       Alert.createAlert(alertData);
       console.log("ALERT============================")
       console.log(alertData);
@@ -110,7 +109,7 @@ async function generateOnceNow() {
 }
 
 function startAlertGenerationJob() {
-  cron.schedule('*/10 * * * *', generateOnceNow);
+  cron.schedule('*/30 * * * *', generateOnceNow);
   generateOnceNow(); // run immediately on startup
 }
 
