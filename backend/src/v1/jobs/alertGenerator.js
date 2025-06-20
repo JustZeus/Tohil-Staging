@@ -96,6 +96,7 @@ async function generateOnceNow() {
         updatedAt: new Date().toISOString()
       };
 
+      alertData['_id'] = new mongoose.Types.ObjectId();
       Alert.createAlert(alertData);
       console.log("ALERT============================")
       console.log(alertData);
