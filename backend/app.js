@@ -68,7 +68,7 @@ app.use((req, res, next) => {
 app.disable('x-powered-by');
 
 
-const clientBuildPath = path.join(__dirname, '..', 'client', 'build');
+const clientBuildPath = path.join(__dirname,'src', 'client', 'build');
 
 // Serve static files
 app.use(express.static(clientBuildPath));
