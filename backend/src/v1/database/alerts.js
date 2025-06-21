@@ -5,7 +5,6 @@ const getAllAlerts = async () => {
     return alerts;
 };
 const getLastAlerts = async () => {
-    console.log("DEBUG3");
     const alerts = await Alert.find().sort({ _id: -1 }).limit(3).exec();
     return alerts;
   };

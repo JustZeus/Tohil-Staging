@@ -5,7 +5,6 @@ const getAllAlerts = () => {
     return Alert.getAllAlerts();
 };
 const getLastAlerts = () => {
-    console.log("DEBUG2");
     return Alert.getLastAlerts();
 };
 const createAlert = async (alertData) => {

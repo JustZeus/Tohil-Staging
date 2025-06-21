@@ -24,9 +24,7 @@ const getAllAlerts = async (req, res, next) => {
 
 const getLastAlerts = async (req, res, next) => {
   try {
-    console.log("DEBUG");
       const alerts = await alertService.getLastAlerts();
-      console.log(alerts);
       if (alerts) {
           res.status(200).json({
               'status': 'success',
