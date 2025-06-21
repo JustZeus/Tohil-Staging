@@ -174,7 +174,7 @@ Tohil uses a color-coded alert level system:
 
 > Screenshots will be provided below to showcase:
 > - Alert filtering system.
-![Login Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/images/1-login.png)
+![Login Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/1-login.png "Frontend")
 
 
 
