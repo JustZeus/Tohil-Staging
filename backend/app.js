@@ -30,7 +30,7 @@ startDB();
 
 
 const alertRouter = require('./src/v1/routes/hazardAlertRoutes');
-
+app.use('/v1/alerts', alertRouter);
 // Use morgan to log requests to the console
 if (process.env.NODE_ENV === 'dev') {
     app.use(morgan('dev'));
