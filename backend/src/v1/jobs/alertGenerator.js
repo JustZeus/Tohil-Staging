@@ -23,6 +23,98 @@ function generateRandomPolygon(centerLon, centerLat) {
   ];
 }
 
+function generateRandomPentagon(centerLon, centerLat) {
+  // 1. pick a random target area A in km² between 3 and 4
+  const area = 3 + Math.random() * (4 - 3);
+
+  // 2. for a regular pentagon of side length s: 
+  //    A = (5/4) * s² * cot(π/5)
+  //    →  s = sqrt(4 A tan(π/5) / 5)
+  const tanPiOver5 = Math.tan(Math.PI / 5);
+  const s = Math.sqrt((4 * area * tanPiOver5) / 5);
+
+  // 3. radius R from center to each vertex: R = s / (2 sin(π/5))
+  const R = s / (2 * Math.sin(Math.PI / 5)); // in km
+
+  // 4. convert km → degrees at this latitude
+  const latRad = centerLat * Math.PI / 180;
+  const degPerKmLat = 1 / 111.32;              // approx.
+  const degPerKmLon = 1 / (111.32 * Math.cos(latRad));
+
+  // 5. pick a random rotation so each pentagon is oriented differently
+  const rotation = Math.random() * 2 * Math.PI;
+
+  // 6. build the pentagon vertices
+  const coords = [];
+  for (let i = 0; i < 5; i++) {
+    // each corner is 72° apart
+    const theta = rotation + (i * 2 * Math.PI) / 5;
+    // offset in km
+    const dx = R * Math.cos(theta);
+    const dy = R * Math.sin(theta);
+    // convert to degrees
+    const lon = centerLon + dx * degPerKmLon;
+    const lat = centerLat + dy * degPerKmLat;
+    coords.push([lon, lat]);
+  }
+  // close the polygon by repeating the first point
+  coords.push(coords[0]);
+
+  return coords;
+}
+
+function generateRandomIrregularPentagon(centerLon, centerLat) {
+  // 1. pick a random target area A in km² between 3 and 4
+  const areaTarget = 3 + Math.random() * (4 - 3);
+
+  // 2. get a rough “base” radius for a regular pentagon of that area
+  //    for regular: A = (5/4) s² cot(π/5), R = s/(2 sin(π/5))
+  const tanPiOver5 = Math.tan(Math.PI / 5);
+  const sBase = Math.sqrt((4 * areaTarget * tanPiOver5) / 5);
+  const Rbase = sBase / (2 * Math.sin(Math.PI / 5)); // in km
+
+  // 3. generate 5 random radii around Rbase (to introduce irregularity)
+  //    here each radius is between 60% and 140% of Rbase
+  const radii = Array.from({ length: 5 }, () => 
+    Rbase * (0.6 + 0.8 * Math.random())
+  );
+
+  // 4. pick a random rotation offset
+  const rotation = Math.random() * 2 * Math.PI;
+
+  // 5. build preliminary km‐coordinates for the 5 points
+  const ptsKm = radii.map((r, i) => {
+    const angle = rotation + (i * 2 * Math.PI) / 5;
+    return [ r * Math.cos(angle), r * Math.sin(angle) ]; // [dx, dy] in km
+  });
+
+  // 6. compute the polygon’s current area (planar shoelace, in km²)
+  let sum = 0;
+  for (let i = 0; i < ptsKm.length; i++) {
+    const [x1, y1] = ptsKm[i];
+    const [x2, y2] = ptsKm[(i + 1) % ptsKm.length];
+    sum += x1 * y2 - x2 * y1;
+  }
+  const areaCurrent = Math.abs(sum) / 2;
+
+  // 7. compute a scale factor so that areaCurrent * scale² = areaTarget
+  const scale = Math.sqrt(areaTarget / areaCurrent);
+
+  // 8. convert scaled points into [lon, lat], closing the ring
+  const latRad = centerLat * Math.PI / 180;
+  const degPerKmLat = 1 / 111.32;
+  const degPerKmLon = 1 / (111.32 * Math.cos(latRad));
+
+  const coords = ptsKm.map(([dx, dy]) => {
+    const lon = centerLon + (dx * scale) * degPerKmLon;
+    const lat = centerLat + (dy * scale) * degPerKmLat;
+    return [lon, lat];
+  });
+  // repeat first point to close
+  coords.push(coords[0]);
+
+  return coords;
+}
 
 async function generateOnceNow() {
 
@@ -75,7 +167,7 @@ async function generateOnceNow() {
           name: sectorName,
           polygon: {
             type: 'Polygon',
-            coordinates: [generateRandomPolygon(t.lon, t.lat)]
+            coordinates: [generateRandomIrregularPentagon(t.lon, t.lat)]
           }
         },
         telemetry: {
@@ -98,8 +190,6 @@ async function generateOnceNow() {
 
       alertData['_id'] = new mongoose.Types.ObjectId();
       Alert.createAlert(alertData);
-      console.log("ALERT============================")
-      console.log(alertData);
       console.log(`Inserted alert for ${t.deviceId}: ${alertData.alertId}`);
     }
 
