@@ -72,3 +72,75 @@ Stores all wildfire alert events that are shown in the web application. Each doc
 }
 
 ```
+
+Named after Tohil, the revered Mayan god of fire, our platform symbolizes both the immense power and inherent danger fire holds. **Tohil** harnesses advanced technology to predict wildfire spread, assess risks in near real-time, and recommend optimal emergency responses to safeguard communities and ecosystems.
+
+## 🔥 **The Challenge**
+
+Wildfires are escalating in frequency, intensity, and scale worldwide, driven by climate change and increasing human activities. In recent years:
+
+* Over **10 million acres** burned annually in the United States alone.
+* Wildfire damages in California exceeded **\$20 billion** in recent seasons.
+* Globally, wildfires contribute significantly to biodiversity loss, pollution, and long-term health issues.
+
+Emergency responders, urban planners, and policymakers urgently need precise, real-time information to mitigate wildfire impacts effectively.
+
+## 🚨 **Our Solution: Tohil**
+
+**Tohil** integrates cutting-edge AI, geospatial analytics, and intuitive visualizations to deliver actionable insights:
+
+* **Wildfire Prediction:** AI-driven modeling to forecast wildfire spread, intensity, and potential impacts.
+* **Risk Assessment:** Evaluates immediate threats to infrastructure, natural resources, and human communities.
+* **Resource Allocation & Evacuation Guidance:** Recommends optimal deployment of emergency services and efficient evacuation routes.
+* **Real-Time Telemetry:** Harnesses live data from weather stations, IoT sensors, and external APIs to maintain accurate situational awareness.
+
+## 🌍 **How It Works**
+
+**Backend Technologies:**
+
+* Node.js & Express.js power scalable, real-time data processing.
+* Azure AI Foundry leverages advanced Large Language Models (LLM) to generate actionable recommendations.
+* Azure App Services ensures reliable, scalable, and secure hosting.
+
+**Frontend Technologies:**
+
+* React.js for interactive and responsive user interfaces.
+* HTML, CSS, and JavaScript provide engaging, intuitive visuals.
+
+## 🎯 **Product Demonstration Overview**
+
+Our initial demonstration highlights key capabilities:
+
+* **Alert Dashboard:** An intuitive scrollable event list provides quick access to wildfire alerts, severity ratings, and insightful recommendations.
+* **Interactive Map:** Clearly visualizes hazardous zones with dynamically generated polygons indicating active wildfire areas.
+* **Telemetry Integration:** Real-time environmental and situational data (temperature, wind speed, humidity) displayed alongside actionable advice for citizens and authorities.
+
+## 💡 **Real-World Impact**
+
+By using Tohil, cities and regions can achieve:
+
+* **Faster Response:** Decrease response times by up to 50%, significantly reducing potential damages and casualties.
+* **Improved Preparedness:** Enhanced prediction and preparedness strategies to safeguard critical infrastructure and human lives.
+* **Economic Savings:** Substantial reduction in wildfire damage costs through better resource allocation and early evacuation strategies.
+
+## 🌐 **Why Microsoft Azure?**
+
+Leveraging Microsoft's robust ecosystem ensures reliability and scalability:
+
+* **Azure AI Foundry:** Rapid, advanced analytics using industry-leading AI models.
+* **Azure App Service:** Effortless scalability, security, and global reach.
+* **Integration & Support:** Seamless integration with telemetry data and continuous cloud innovation to keep Tohil ahead.
+
+## 🤖 **Responsible AI**
+
+Tohil adopts Microsoft's Responsible AI practices, emphasizing fairness, transparency, safety, and privacy, ensuring ethical and trustworthy decision-making.
+
+## 📈 **Join Us in Fighting Wildfires Smarter**
+
+Investors and stakeholders can be part of this pivotal technology transforming wildfire risk management globally.
+
+**Together, let's empower communities, save lives, and protect ecosystems from the devastating impacts of wildfires.**
+
+---
+
+🌟 **Tohil** – Revolutionizing wildfire management, prediction, and response with cutting-edge AI and real-time intelligence. 🌟
