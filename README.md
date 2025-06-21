@@ -174,33 +174,33 @@ Tohil uses a color-coded alert level system:
 > Screenshots will be provided below to showcase:
 > - Alert filtering system.
 
-![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/10-dashboard.png "Frontend")
+![Dashboard Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/10-dashboard.png "Frontend")
 
 > - Interactive map with polygon overlays.
 
-![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/11-dashboard.png "Frontend")
+![Dashboard Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/11-dashboard.png "Frontend")
 
 > - Alert detail views and authority notifications.
 
-![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/8-dashboard-acknowledge.png "Frontend")
+![Dashboard Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/8-dashboard-acknowledge.png "Frontend")
 
 > - Alert detail views and authority notifications.
 
-![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/9-dashboard-details.png "Frontend")
+![Dashboard Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/9-dashboard-details.png "Frontend")
 
 > - Authentication login so authorities can mark an alert as acknowledged
 
-![Login Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/1-login.png "Frontend")
+![Login Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/1-login.png "Frontend")
 
-![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/6-dashboard-withLogin.png "Frontend")
+![Dashboard Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/6-dashboard-withLogin.png "Frontend")
 
 > -home page where the application is explained and how it works.
 
-![Home Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/2-home.png "Frontend")
+![Home Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/2-home.png "Frontend")
 
-![Home Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/3-home2.png "Frontend")
+![Home Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/3-home2.png "Frontend")
 
-![Home Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/4-home3.png "Frontend")
+![Home Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/4-home3.png "Frontend")
 
 ## 📈 **Join Us in Fighting Wildfires Smarter**
 
