@@ -1,0 +1,201 @@
+.dashboardApp{
+    position: relative;
+    overflow: hidden;
+}
+
+.backtable{
+    width: 100%;
+    height: 1000vh;
+    background: gray;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.backtableButton{
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+    cursor: pointer;
+    animation: outSAction 0.6s linear;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes  outSAction {
+    99% {opacity: 0.5;}
+    100%{opacity: 0;}
+} 
+
+
+.backtableClose{
+    display: none;
+}
+
+.confirmAction{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    /* height: calc(100vh - 220px); */
+    display: grid;
+    place-items: center;   
+}
+
+.confirmActionButton{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+
+
+.confirmActionClose{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-items: center;   
+    animation: outAction 0.3s linear;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+.confirmActionCloseButton{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-items: center;   
+    animation: outActionSelectedUserManagement 0.3s linear;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes  outAction {
+    1% {scale: 1;}
+    100%{scale: 0.2;display: none;}
+} 
+
+@keyframes  outActionSelectedUserManagement {
+    1% {position: absolute; right: 0;}
+    100%{position: absolute; right: -700px; display: none;}
+} 
+
+/* -------------watch details */
+.watch{
+    width: 20px;
+    height: 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: #FAFAFA;
+    overflow: hidden;
+    animation: showActionWatch 0.6s linear;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    h3{
+        color: var(--darkBlue);
+        font-size: 25px;
+        margin-left: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+.headerWatch{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+
+.watch div button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* 
+.watch .details{
+    height: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;     
+    line-height: 1.5;
+    margin: 20px 40px;             
+    font-size: 16px;
+} */
+
+/* .watch .details{
+    height: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: pre-wrap;     
+    margin: 20px 40px;             
+    font-size: 16px;
+
+} */
+
+.details::-webkit-scrollbar{
+    width: 8px;
+}
+
+.details::-webkit-scrollbar-thumb{
+    /* background: #A1A1AA; */
+    background: var(--gray);
+    border-radius: 10px;
+
+}
+
+@keyframes  showActionWatch {
+    1% {width: 20px; height: 20px;}
+    100%{  width: 650px; height: 450px;}
+}
+
+
+/* ----------------------------------------- */
+
+
+.watch .details {
+    height: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #f9f9f9;
+    margin: 20px 40px;             
+    border-radius: 8px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
+  
+  .line {
+    padding: 2px 0;
+  }
+  
+  .line.empty {
+    height: 10px;
+  }
+  
+  .line.location {
+    font-weight: bold;
+    color: var(--backgroundBlue);
+  }
+/*   
+  .line.detail {
+    color: #37474f;
+    padding-left: 10px;
+  }
+   */
+  .line.section {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--darkRed);
+  }
+  
+  /* .line.bullet {
+    padding-left: 10px;
+    color: #2e7d32;
+  }
+   */

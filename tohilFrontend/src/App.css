@@ -1,0 +1,21 @@
+:root {
+    --yellow: #CC9900;
+    --red: #8b0333;
+    --blue: #78b6db;
+    --darkRed: #2a0111;
+    --darkBlue: #132434;
+    --ice: #e8f0f6;
+    --logoBackground:#112130; 
+    --darkGray: #696969;
+    --gray: #80808036;
+    --backgroundBlue: #0a2a43;
+    --homeh2: 40px;
+    --homep: 20px;
+}
+  
+body{
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
