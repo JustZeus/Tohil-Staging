@@ -135,6 +135,50 @@ Leveraging Microsoft's robust ecosystem ensures reliability and scalability:
 
 Tohil adopts Microsoft's Responsible AI practices, emphasizing fairness, transparency, safety, and privacy, ensuring ethical and trustworthy decision-making.
 
+
+# 🖥️ User Interface Overview
+
+Tohil features a clean, modern, and responsive interface designed to offer fast access to alert information and facilitate decision-making.
+
+### 🔧 Dashboard
+
+The dashboard is the main area where users can:
+
+- 🔍 **View current wildfire alerts**.
+- 📍 **Filter alerts by region** using the left sidebar.
+- 📋 Interact with **alert cards**, which include:
+  - Alert level and description.
+  - **`View Map`**: Displays a polygon marking the affected zone on the map.
+  - **`More Info`**: Shows additional details, safety tips, and insights.
+  - Authority notification status (shows which authority was alerted and when).
+
+### 🗺️ Map View
+
+On the right side of the dashboard, a real-time interactive map displays:
+
+- 🔺 **Polygons** marking affected or at-risk zones.
+- 🧭 Visual context for alerts using geographical data.
+
+### 🎨 UI Design and Color System
+
+Tohil uses a color-coded alert level system:
+
+| Alert Level | Description                              | Color  |
+|-------------|------------------------------------------|--------|
+| 1           | Favorable fire conditions                | Yellow |
+| 2           | Possible fire signs (e.g. smoke)         | Yellow |
+| 3           | Confirmed fire (e.g. visible flames)     | Red    |
+| 4           | High-risk or out-of-control fire         | Red    |
+
+## 📸 Interface Preview
+
+> Screenshots will be provided below to showcase:
+> - Alert filtering system.
+![Frontend Dashboard](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/images/10-dashboard.png "Frontend")
+
+> - Interactive map with polygon overlays.
+> - Alert detail views and authority notifications.
+
 ## 📈 **Join Us in Fighting Wildfires Smarter**
 
 Investors and stakeholders can be part of this pivotal technology transforming wildfire risk management globally.
