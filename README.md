@@ -135,8 +135,7 @@ Leveraging Microsoft's robust ecosystem ensures reliability and scalability:
 
 Tohil adopts Microsoft's Responsible AI practices, emphasizing fairness, transparency, safety, and privacy, ensuring ethical and trustworthy decision-making.
 
-
-# 🖥️ User Interface Overview
+## 🖥️ User Interface Overview
 
 Tohil features a clean, modern, and responsive interface designed to offer fast access to alert information and facilitate decision-making.
 
@@ -144,9 +143,9 @@ Tohil features a clean, modern, and responsive interface designed to offer fast 
 
 The dashboard is the main area where users can:
 
-- 🔍 **View current wildfire alerts**.
-- 📍 **Filter alerts by region** using the left sidebar.
-- 📋 Interact with **alert cards**, which include:
+- **View current wildfire alerts**.
+- **Filter alerts by region** using the left sidebar.
+- Interact with **alert cards**, which include:
   - Alert level and description.
   - **`View Map`**: Displays a polygon marking the affected zone on the map.
   - **`More Info`**: Shows additional details, safety tips, and insights.
@@ -156,8 +155,8 @@ The dashboard is the main area where users can:
 
 On the right side of the dashboard, a real-time interactive map displays:
 
-- 🔺 **Polygons** marking affected or at-risk zones.
-- 🧭 Visual context for alerts using geographical data.
+- **Polygons** marking affected or at-risk zones.
+- Visual context for alerts using geographical data.
 
 ### 🎨 UI Design and Color System
 
@@ -174,14 +173,34 @@ Tohil uses a color-coded alert level system:
 
 > Screenshots will be provided below to showcase:
 > - Alert filtering system.
-![Login Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/1-login.png "Frontend")
 
-
+![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/10-dashboard.png "Frontend")
 
 > - Interactive map with polygon overlays.
+
+![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/11-dashboard.png "Frontend")
+
 > - Alert detail views and authority notifications.
 
+![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/8-dashboard-acknowledge.png "Frontend")
 
+> - Alert detail views and authority notifications.
+
+![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/9-dashboard-details.png "Frontend")
+
+> - Authentication login so authorities can mark an alert as acknowledged
+
+![Login Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/1-login.png "Frontend")
+
+![Dashboard Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/6-dashboard-withLogin.png "Frontend")
+
+> -home page where the application is explained and how it works.
+
+![Home Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/2-home.png "Frontend")
+
+![Home Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/3-home2.png "Frontend")
+
+![Home Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/4-home3.png "Frontend")
 
 ## 📈 **Join Us in Fighting Wildfires Smarter**
 
