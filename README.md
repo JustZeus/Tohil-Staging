@@ -6,6 +6,17 @@ Named after the Mayan god of fire — symbolizes both the life-giving warmth tha
 
 Stores all wildfire alert events that are shown in the web application. Each document contains telemetry data, classification, map zone, status, and recommendations for citizens and authorities.
 
+## 🚀 Try the Demo
+
+Experience **Tohil** in action through our live demo:
+
+👉 [https://tohil-staging.azurewebsites.net/](https://tohil-staging.azurewebsites.net/)
+
+Explore the real-time wildfire alert dashboard, interactive map, and alert-level system — all in one intuitive interface.
+
+> 🧠 *Best viewed on desktop for full functionality.*
+
+
 ### 📄 Schema Overview
 | Field                     | Type                  | Description                                                                    |
 | ------------------------- | --------------------- | ------------------------------------------------------------------------------ |
