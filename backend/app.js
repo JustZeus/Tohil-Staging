@@ -2,7 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-
+const { startAlertGenerationJob } = require('./src/v1/jobs/alertGenerator');
+const path = require('path');
 
 require('dotenv').config();
 
@@ -29,7 +30,7 @@ startDB();
 
 
 const alertRouter = require('./src/v1/routes/hazardAlertRoutes');
-
+app.use('/v1/alerts', alertRouter);
 // Use morgan to log requests to the console
 if (process.env.NODE_ENV === 'dev') {
     app.use(morgan('dev'));
@@ -66,7 +67,17 @@ app.use((req, res, next) => {
 // Reduce Fingerprinting
 app.disable('x-powered-by');
 
-app.use('/v1/alerts', alertRouter);
+
+const clientBuildPath = path.join(__dirname,'src', 'client', 'build');
+
+// Serve static files
+app.use(express.static(clientBuildPath));
+
+// Serve React app for non-API routes
+app.get('/{*any}', (req, res, next) => {
+    if (req.path.startsWith('/v1')) return next();
+    res.sendFile(path.join(clientBuildPath, 'index.html'));
+});
 
 // Handle requests to invalid resources
 app.use((req, res, next) => {
@@ -84,6 +95,9 @@ app.use((error, req, res, next) => {
         },
     });
 });
+
+// Cron Job every ten minutes to grab new alert data
+startAlertGenerationJob();
 
 const server = app.listen(port, () => {
     console.log('Server started on port ' + port);
