@@ -174,10 +174,14 @@ Tohil uses a color-coded alert level system:
 
 > Screenshots will be provided below to showcase:
 > - Alert filtering system.
-![Frontend Dashboard](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/images/10-dashboard.png "Frontend")
+![Login Screenshot](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/images/1-login.png)
+
+
 
 > - Interactive map with polygon overlays.
 > - Alert detail views and authority notifications.
+
+
 
 ## 📈 **Join Us in Fighting Wildfires Smarter**
 
