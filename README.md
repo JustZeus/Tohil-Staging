@@ -205,7 +205,7 @@ Tohil uses a color-coded alert level system:
 
 ![Dashboard Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/6-dashboard-withLogin.png "Frontend")
 
-> -home page where the application is explained and how it works.
+> - home page where the application is explained and how it works.
 
 ![Home Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/2-home.png "Frontend")
 
