@@ -199,7 +199,7 @@ Tohil uses a color-coded alert level system:
 
 ![Dashboard Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/9-dashboard-details.png "Frontend")
 
-> - Authentication login so authorities can mark an alert as acknowledged
+> - Authentication login so authorities can mark an alert as acknowledged.
 
 ![Login Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/1-login.png "Frontend")
 
@@ -212,6 +212,16 @@ Tohil uses a color-coded alert level system:
 ![Home Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/3-home2.png "Frontend")
 
 ![Home Frontend](https://raw.githubusercontent.com/JustZeus/Tohil-Staging/main/img/4-home3.png "Frontend")
+
+## 📢 Authority Acknowledgment Feature
+
+Tohil provides a special feature for authorities to manage wildfire alerts effectively:
+
+- When **authorities log in**, they have access to an **"Acknowledge"** button on each alert.
+- By clicking this button, authorities confirm that they are aware of the alert and are taking action.
+- **General users** do **not** have this button; they can only **see the acknowledgment status** for each alert (whether it has been acknowledged or not).
+
+This feature improves communication and transparency by clearly showing which alerts have been officially recognized by the responsible authorities.
 
 ## 📈 **Join Us in Fighting Wildfires Smarter**
 
